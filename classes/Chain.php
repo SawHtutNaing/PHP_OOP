@@ -1,5 +1,6 @@
 <?php 
 
+// method chaining is not concept just techines
 class Chain{
     public function a():object{
         print("this is a ");

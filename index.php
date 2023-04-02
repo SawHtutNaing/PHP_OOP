@@ -45,9 +45,19 @@ require_once "./auto_load.php";
 // method chaining end
 
 
-$query_builder = new Query_Builder("users");
-$query_builder->where('Gender',"=","female")->where("lan","=","eng")->Orwhere('id','=',"4")->OrderBy("id" , "DESC")->OrderBy("age");
-echo $query_builder->sql();
+// $query_builder = new Query_Builder("users");
+// $query_builder->where('Gender',"=","female")->where("lan","=","eng")->Orwhere('id','=',"4")->OrderBy("id" , "DESC")->OrderBy("age");
+// echo $query_builder->sql();
+
+
+// encapsulation 
+
+$pserson =  new Person();
+echo $pserson->getNudepics();
+$pserson->setHomeAddress("helden");
+echo $pserson->getHomeAddress();
+
+
 
 
 
